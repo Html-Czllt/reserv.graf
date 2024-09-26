@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --bg-color: #12161d; /* Fundo dark blue */
+    --text-color: #e0e0e0; /* Texto branco acinzentado */
+    --highlight-color: #f08b8bbd; /* Vermelho fraco para destaques */
+}
+
+.highlight {
+    color: var(--highlight-color); /* Vermelho fraco */
+    font-weight: bold; /* Deixar em negrito */
+}
+
+body {
+    background-color: var(--bg-color); /* Fundo dark blue */
+    color: var(--text-color); /* Texto branco acinzentado */
+    font-family: 'Nunito Sans', sans-serif; /* Fonte 'Nunito Sans' */
+    height: 100vh;
+}
+
+header {
+    background-color: var(--bg-color); /* Cor do fundo do header */
+    text-align: center;
+    padding: 1px;
+    border-bottom: 2px solid var(--text-color); /* Borda inferior branca acinzentada */
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--highlight-color); /* Vermelho fraco para o título */
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color); /* Texto branco acinzentado */
+    margin: 0 2rem 1rem 0rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--highlight-color); /* Fundo vermelho fraco */
+    color: var(--bg-color); /* Texto muda para o fundo dark blue */
+    box-shadow: 0 0px 15px rgba(255, 111, 111, 0.5); /* Sombra mais intensa */
+    transform: scale(1.1); /* Aumenta o tamanho do botão */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+
+
+
+
+.graficos-container {
+    margin: 5rem;
+}
+
+.grafico {
+    margin-top: 3rem;
+}
+
+.graficos-container__texto {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--highlight-color) solid 2px; /* Bordas em vermelho fraco */
+}
+
+span {
+    font-weight: bold;
+    color: var(--highlight-color); /* Vermelho fraco para destaques */
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color); /* Cor de fundo do rodapé */
+    color: var(--highlight-color); /* Texto em vermelho fraco */
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    border-top: 2px solid var(--text-color); /* Bordas brancas acinzentadas */
+}
